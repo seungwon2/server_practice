@@ -46,5 +46,7 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 db.User = require("./user")(sequelize, Sequelize);
+db.User = require("./dao")(sequelize, Sequelize);
+db.User = require("./user")(sequelize, Sequelize);
 
 module.exports = db;
